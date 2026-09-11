@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rad001",
+    "source": "seed",
+    "title": "[SAMPLE] Radar placeholder — bots will fill this later",
+    "category": "Z",
+    "price": "—",
+    "url": "",
+    "notes": "Empty-ish seed row so the Deal Radar table renders. Real deals arrive via bots.",
+    "seen_at": "2026-09-11T12:00:00Z",
+    "sample": true
+  }
+]

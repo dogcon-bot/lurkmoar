@@ -1,0 +1,44 @@
+Lurkmoar MVP — apply / ops notes
+=================================
+
+Paths
+  App root:   /workspace/lurkmoar/
+  Venv:       /workspace/lurkmoar/.venv/
+  Data:       /workspace/lurkmoar/data/listings.json
+              /workspace/lurkmoar/data/radar.json
+
+Port
+  8787  (HTTP, bind 0.0.0.0)
+
+Start command
+  /workspace/lurkmoar/.venv/bin/python /workspace/lurkmoar/app.py
+
+  Or from app root:
+  .venv/bin/python app.py
+  ./run.sh
+
+Background example
+  nohup .venv/bin/python app.py > /tmp/lurkmoar.log 2>&1 &
+  echo $!   # PID
+
+Stop
+  kill $(pgrep -f '/workspace/lurkmoar/app.py')
+  # or kill <PID>
+
+Local open
+  http://127.0.0.1:8787/
+  http://127.0.0.1:8787/radar
+  http://127.0.0.1:8787/post
+
+Domain attach (when GoDaddy mapped)
+  - Point A/CNAME at host
+  - Reverse-proxy :80/:443 → 127.0.0.1:8787 (nginx sketch in README)
+  - Optional: systemd unit; change secret_key; certbot TLS
+
+Health check
+  curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:8787/
+
+Runtime (box, started ~11:57 AM PT 2026-09-11)
+  PID:  3740963  (also in data/server.pid)
+  Port: 8787
+  Log:  /tmp/lurkmoar.log
