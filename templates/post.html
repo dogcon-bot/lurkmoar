@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Post — Lurkmoar{% endblock %}
+{% block content %}
+<h1>Post a listing</h1>
+<form class="post card" method="post" action="{{ url_for('post') }}">
+<label for="title">Title *</label>label><input id="title" name="title" required maxlength="160" value="{{ form.get('title', '') }}">
+<label for="category">Category *</label>label><select id="category" name="category" required><option value="">— select —</option>option>{% for c in categories %}<option value="{{ c }}">{{ c }}</option>option>{% endfor %}</select>select>
+<label for="price">Price</label>label><input id="price" name="price" maxlength="40">
+<label for="location">Location</label>label><input id="location" name="location" maxlength="80">
+<label for="contact">Contact</label>label><input id="contact" name="contact" maxlength="120">
+<label for="body">Description *</label>label><textarea id="body" name="body" required maxlength="4000">{{ form.get('body', '') }}</textarea>
+<button type="submit">Post listing</button>button>
+</form>form>
+{% endblock %}</h1>
