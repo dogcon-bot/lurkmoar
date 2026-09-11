@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Lurkmoar{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="{{ url_for('index') }}">Lurk<span>moar</span></a>
+      <span class="tagline">Classic Nissan / Honda classifieds</span>
+      <nav>
+        <a href="{{ url_for('index') }}" class="{{ 'active' if page == 'board' else '' }}">Board</a>
+        <a href="{{ url_for('radar') }}" class="{{ 'active' if page == 'radar' else '' }}">Deal Radar</a>
+        <a href="{{ url_for('post') }}" class="{{ 'active' if page == 'post' else '' }}">Post</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flash">
+          {% for cat, msg in messages %}
+            <li class="{{ cat }}">{{ msg }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+    <footer>
+      Lurkmoar MVP · no payments · niche board only · sample listings marked SAMPLE
+    </footer>
+  </main>
+</body>
+</html>
