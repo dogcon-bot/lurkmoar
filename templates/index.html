@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Board — Lurkmoar{% endblock %}
+{% block content %}
+  <h1>Classifieds Board</h1>
+  <div class="filters">
+      <a href="{{ url_for('index') }}" class="{{ 'active' if not active_category else '' }}">All</a>a>
+      {% for c in categories %}
+        <a href="{{ url_for('index', category=c) }}" class="{{ 'active' if active_category == c else '' }}">{{ c }}</a>a>
+      {% endfor %}
+  </div>div>
+  {% if not listings %}
+    <p class="empty">No listings in this category yet. <a href="{{ url_for('post') }}">Post one</a>a>.</p>p>
+  {% else %}
+    {% for L in listings %}
+      <article class="card">
+              <h3><a href="{{ url_for('listing_detail', listing_id=L.id) }}">{{ L.title }}</a>a></h3>
+              <div class="meta"><span class="badge cat">{{ L.category }}</span>span>{% if L.sample %}<span class="badge sample">SAMPLE</span>span>{% endif %}<span class="price">{{ L.price }}</span>span><span>{{ L.location }}</span><span>{{ L.created_at[:10] }}</span></div>div>
+              <p>{{ L.body[:160] }}{% if L.body|length > 160 %}…{% endif %}</p>
+      </article>article>
+    {% endfor %}
+  {% endif %}
+{% endblock %}</p></span></span></h3></h1>
