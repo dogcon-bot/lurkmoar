@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ listing.title }} — Lurkmoar{% endblock %}
+{% block content %}
+<p><a href="{{ url_for('index') }}">← Back to board</a>a></p>
+<article class="card">
+<h1>{{ listing.title }}</h1>
+<div class="meta"><span class="badge cat">{{ listing.category }}</span>span>{% if listing.sample %}<span class="badge sample">SAMPLE</span>span>{% endif %}<span class="price">{{ listing.price }}</span>span><span>{{ listing.location }}</span><span>{{ listing.created_at }}</span></div>div>
+<p><strong>Contact:</strong> {{ listing.contact }}</p>
+<div class="detail-body">{{ listing.body }}</div>div>
+</article>article>
+{% endblock %}</strong></p></span></span></h1></p>
