@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+data/server.pid
+data/cloudflared.pid
+data/public-url.txt
+*.log
