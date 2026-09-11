@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Deal Radar — Lurkmoar{% endblock %}
+{% block content %}
+<h1>Deal Radar</h1>
+<p>Feed filled later by bots. No Marketplace scrape in this MVP.</p>
+{% if not rows %}<p class="empty">Radar is empty.</p>{% else %}<table class="radar"><thead><tr><th>Seen</th><th>Category</th><th>Title</th><th>Price</th><th>Source</th><th>Notes</th></tr></thead><tbody>{% for r in rows %}<tr><td>{{ r.seen_at[:10] if r.seen_at else '—' }}</td><td>{{ r.category or '—' }}</td><td>{% if r.url %}<a href="{{ r.url }}">{{ r.title }}</a>a>{% else %}{{ r.title }}{% endif %}</td><td>{{ r.price or '—' }}</td><td>{{ r.source or '—' }}</td><td>{{ r.notes or '' }}</td></tr>{% endfor %}</tbody></table>table>{% endif %}
+{% endblock %}</td></td></tr></tbody></th></th></tr></thead></p></h1>
