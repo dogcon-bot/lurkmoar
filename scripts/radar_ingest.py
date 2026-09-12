@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Lurkmoar Deal Radar ingest — legal public feeds only.
+"""Lurkmoar Deal Radar ingest — OFF-BOX only (Jobs Desk box / bots).
+
+Run this where outbound HTTP is allowed. Do **not** run on free
+PythonAnywhere (allowlisted egress). After ingest, sync ``data/radar.json``
+(and optionally ``data/listings.json``) onto the host — see
+``scripts/sync_data_note.md`` or ``./scripts/export_for_host.sh``.
 
 Sources (respectful, rate-limited, fail-soft):
   - Bring a Trailer public make/model listing pages
@@ -15,6 +20,7 @@ Usage (from repo root or anywhere):
   cd /workspace/lurkmoar && .venv/bin/python -m scripts.radar_ingest
 
 Appends/dedupes into data/radar.json matching README schema.
+The Flask app (app.py) only *reads* that file — no scrape from the webapp.
 """
 
 from __future__ import annotations
