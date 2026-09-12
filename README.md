@@ -25,8 +25,9 @@ Alternate: `./run.sh`
 | Path | Purpose |
 |------|---------|
 | `app.py` | Flask app: board, post form, detail, radar |
-| `data/listings.json` | Classifieds (5 SAMPLE seeds) |
-| `data/radar.json` | Deal Radar rows (placeholder; bots append later) |
+| `data/listings.json` | Classifieds (SAMPLE seeds) |
+| `data/radar.json` | Deal Radar rows (bots append via ingest) |
+| `scripts/radar_ingest.py` | Bot-runnable public-feed ingest → radar.json |
 | `templates/` | HTML |
 | `static/style.css` | Dark niche-board UI |
 | `APPLY` | Ports + start command for ops |
@@ -77,9 +78,24 @@ Flask already binds `0.0.0.0:8787`. When DNS is ready:
 
 Static-only alternative: export later if you drop the post form; for now Flask is the durable path.
 
-## Radar bots (later)
+## Deal Radar ingest (bots)
 
-Append objects to `data/radar.json` (or add a small POST API). Schema:
+Append/dedupe into `data/radar.json` with the bot script (stdlib only — no extra pip deps):
+
+```bash
+cd /workspace/lurkmoar
+.venv/bin/python scripts/radar_ingest.py
+```
+
+Cron-friendly; safe to re-run. Behavior:
+
+- **Sources (legal public only):** Bring a Trailer public make/model pages; Craigslist RSS search feeds when the host allows them; best-effort public forum classified indexes.
+- **Niche filter:** classic Z / S-chassis / old Honda keywords only.
+- **Respectful:** custom User-Agent, ~2.5s pause between requests, soft-fail on 403/timeout (does not wipe existing rows).
+- **Dedupe:** by listing URL (and id); refreshes `seen_at` / price on match.
+- **Out of scope:** Facebook Marketplace scrape.
+
+Schema for each row:
 
 ```json
 {
