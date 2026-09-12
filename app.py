@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Lurkmoar MVP — classic Nissan/Honda niche classifieds + Deal Radar."""
+"""Lurkmoar MVP — classic Nissan/Honda niche classifieds + Deal Radar.
+
+Serve-only for free hosts (e.g. PythonAnywhere): this app reads/writes local
+``data/*.json`` only. It never fetches remote URLs. Deal Radar ingest runs
+off-box via ``scripts/radar_ingest.py``; sync JSON onto the host (see
+``scripts/sync_data_note.md``).
+"""
 
 from __future__ import annotations
 

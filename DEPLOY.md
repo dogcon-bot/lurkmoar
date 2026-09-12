@@ -1,6 +1,15 @@
 # Lurkmoar — deploy notes
 
-Updated: 2026-09-11 ~12:02 PM PT
+Updated: 2026-09-11 ~5:15 PM PT
+
+## Preferred free host: PythonAnywhere
+
+Free PA = **subdomain only** (`username.pythonanywhere.com`), **no custom domain**, renew monthly.
+**Ingest off-box**; webapp only reads `data/*.json`. See README → **PythonAnywhere (free) deploy**
+and `scripts/sync_data_note.md`. Build upload tree: `./scripts/export_for_host.sh`.
+
+---
+
 
 ## Public HTTPS URL (live now)
 
