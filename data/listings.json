@@ -1,1 +1,68 @@
-[{"id":"smp001","title":"[SAMPLE] 1972 Datsun 240Z — numbers-matching, needs TLC","category":"Z","price":"$18,500","location":"Portland, OR","contact":"sample@lurkmoar.local","body":"SAMPLE LISTING — not a real sale.\n\nEarly 240Z with original L24, 4-speed, solid floors, typical surface rust on rockers. Runs and drives. Title in hand. Photos available on request. This is seed data for the Lurkmoar MVP board.","sample":true,"created_at":"2026-09-10T18:00:00Z"},{"id":"smp002","title":"[SAMPLE] 1995 Nissan 240SX S14 — KA24DE, clean title","category":"S-chassis","price":"$7,200","location":"Seattle, WA","contact":"sample@lurkmoar.local","body":"SAMPLE LISTING — not a real sale.\n\nS14 coupe, KA24DE, stock suspension, aftermarket wheels. Interior decent. No accidents known. Ideal project or weekend driver. Seed data only.","sample":true,"created_at":"2026-09-10T19:30:00Z"},{"id":"smp003","title":"[SAMPLE] 1991 Honda CRX Si — B16 swap, track toy","category":"old Honda","price":"$9,900","location":"Sacramento, CA","contact":"sample@lurkmoar.local","body":"SAMPLE LISTING — not a real sale.\n\nEF CRX with B16A, LSD, coilovers, roll bar. Street-legal, used for HPDE. Not a daily. Seed listing for Lurkmoar.","sample":true,"created_at":"2026-09-11T01:00:00Z"},{"id":"smp004","title":"[SAMPLE] WANTED: S13 hatch — preferably SR20DET or KA","category":"Wanted","price":"Budget ~$5–8k","location":"PNW / ship OK","contact":"sample@lurkmoar.local","body":"SAMPLE LISTING — not a real want-ad.\n\nLooking for a solid S13 hatch project. Prefer running drivetrain, rust-free chassis preferred. Will travel for the right car. Seed data.","sample":true,"created_at":"2026-09-11T08:15:00Z"},{"id":"smp005","title":"[SAMPLE] For Sale: OEM Z31 turbo parts lot","category":"For Sale","price":"$450 OBO","location":"Phoenix, AZ","contact":"sample@lurkmoar.local","body":"SAMPLE LISTING — not a real sale.\n\nAssorted Z31 turbo soft parts: IC piping, wastegate actuator, miscellaneous brackets. Local pickup preferred. Seed listing for the board.","sample":true,"created_at":"2026-09-11T15:00:00Z"}]
+[
+  {
+    "id": "smp001",
+    "title": "[SAMPLE] 1972 Datsun 240Z — L24, 4-speed, solid chassis project",
+    "category": "Z",
+    "price": "$18,500",
+    "location": "Portland, OR",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real sale.\n\nEarly HS30-line 240Z vibes for the board demo: original L24, factory 4-speed, numbers-matching claim from seller notes. Floors and frame rails look honest in the seed photoset; typical rocker/surface rust called out. Runs/drives short distances, brakes need a full refresh, interior is driver-grade. Title in hand. Posted so the Z filter and detail page have something meaty to render — replace with a real post anytime.",
+    "sample": true,
+    "created_at": "2026-09-10T18:00:00Z"
+  },
+  {
+    "id": "smp002",
+    "title": "[SAMPLE] 1995 Nissan 240SX S14 — KA24DE coupe, clean title",
+    "category": "S-chassis",
+    "price": "$7,200",
+    "location": "Seattle, WA",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real sale.\n\nS14 kouki-style coupe seed: KA24DE, 5-speed, stock-ish suspension with fresh bushings noted, aftermarket 17s, no known airbag lights. Paint is sun-faded on the hatch; rockers need a careful poke. Interior bolsters worn but complete. Ideal KA weekend car or SR/RB swap candidate. Clean title. Demo data for the S-chassis lane.",
+    "sample": true,
+    "created_at": "2026-09-10T19:30:00Z"
+  },
+  {
+    "id": "smp003",
+    "title": "[SAMPLE] 1991 Honda CRX Si — B16A swap, HPDE toy",
+    "category": "old Honda",
+    "price": "$9,900",
+    "location": "Sacramento, CA",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real sale.\n\nEF CRX Si shell with B16A, cable LSD, coilovers, half-cage, and a basic aero lip — built as a street-legal HPDE toy, not a grocery-getter. Compression notes and recent timing belt called out in the sample writeup. Will need a patient buyer who understands 30+ year-old chassis quirks. Seed listing for the old Honda filter.",
+    "sample": true,
+    "created_at": "2026-09-11T01:00:00Z"
+  },
+  {
+    "id": "smp004",
+    "title": "[SAMPLE] WANTED: S13 hatch — SR20DET or strong KA, rust-honest",
+    "category": "Wanted",
+    "price": "Budget ~$5–8k",
+    "location": "PNW / ship OK",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real want-ad.\n\nLooking for an S13 hatch project with a running SR20DET or a healthy KA and a chassis that is honest about rust (rails/hatch corners). Prefer complete interior and a title that matches the VIN. Will travel the West Coast for the right car; shipping negotiable. Seed want-ad so the Wanted category is not empty.",
+    "sample": true,
+    "created_at": "2026-09-11T08:15:00Z"
+  },
+  {
+    "id": "smp005",
+    "title": "[SAMPLE] For Sale: OEM Z31 turbo soft-parts lot",
+    "category": "For Sale",
+    "price": "$450 OBO",
+    "location": "Phoenix, AZ",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real sale.\n\nAssorted Z31 turbo soft parts for the parts-bin crowd: IC piping sections, wastegate actuator, vacuum/boost lines, and miscellaneous brackets. Not a complete kit — counted for a mock inventory photo. Local pickup preferred; light shipping possible. Seed listing for the For Sale tab.",
+    "sample": true,
+    "created_at": "2026-09-11T15:00:00Z"
+  },
+  {
+    "id": "smp006",
+    "title": "[SAMPLE] 1988 Honda Prelude Si 4WS — 5-speed, unmolested",
+    "category": "old Honda",
+    "price": "$6,400",
+    "location": "Denver, CO",
+    "contact": "sample@lurkmoar.local",
+    "body": "SAMPLE LISTING — not a real sale.\n\nThird-gen Prelude Si with 4-wheel steering, factory 5-speed, and mostly stock appearance. Timing belt service claimed ~10k ago; A/C needs a recharge. Clear coat peel on the roof, but floors look dry in the seed description. Nice counterweight to the CRX track toy so old Honda has both daily-ish and project flavors.",
+    "sample": true,
+    "created_at": "2026-09-11T20:00:00Z"
+  }
+]

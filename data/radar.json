@@ -1,13 +1,101 @@
 [
   {
-    "id": "rad001",
-    "source": "seed",
-    "title": "[SAMPLE] Radar placeholder — bots will fill this later",
+    "id": "rad_5e1c2b8e4a",
+    "source": "bringatrailer",
+    "title": "2000 Acura Integra GS-R Hatchback 5-Speed",
+    "category": "old Honda",
+    "price": "$16,250",
+    "url": "https://bringatrailer.com/listing/2000-acura-integra-36/",
+    "notes": "This 2000 Acura Integra GS-R hatchback was initially delivered to Acura of Mission Viejo in California and remained under the care of its original owner until 2026. The car is fini",
+    "seen_at": "2026-09-11T23:51:40Z",
+    "sample": false
+  },
+  {
+    "id": "rad_51c026fed0",
+    "source": "bringatrailer",
+    "title": "1989 Honda CRX Si 5-Speed",
+    "category": "old Honda",
+    "price": "$12,640",
+    "url": "https://bringatrailer.com/listing/1989-honda-crx-si-51/",
+    "notes": "This 1989 Honda CRX Si was acquired by the seller in 2021 and underwent a multi-year cosmetic refurbishment that was completed in 2024. Work involved repainting the body Barbados Y",
+    "seen_at": "2026-09-11T23:51:35Z",
+    "sample": false
+  },
+  {
+    "id": "rad_c2eb16e4fb",
+    "source": "bringatrailer",
+    "title": "28-Years-Owned, 28k-Mile 1995 Nissan 300ZX Twin Turbo 5-Speed",
     "category": "Z",
-    "price": "—",
-    "url": "",
-    "notes": "Empty-ish seed row so the Deal Radar table renders. Real deals arrive via bots.",
-    "seen_at": "2026-09-11T12:00:00Z",
-    "sample": true
+    "price": "$25,000",
+    "url": "https://bringatrailer.com/listing/1995-nissan-300zx-twin-turbo-52/",
+    "notes": "This 1995 Nissan 300ZX Twin Turbo was initially delivered to Rocky Mountain Nissan Inc. of Denver, Colorado, and it was acquired by the seller in 1998. The car shows 28k miles and",
+    "seen_at": "2026-09-11T23:51:26Z",
+    "sample": false
+  },
+  {
+    "id": "rad_6d09f09974",
+    "source": "bringatrailer",
+    "title": "Modified 1991 Nissan 300ZX Twin Turbo 5-Speed",
+    "category": "Z",
+    "price": "$5,000",
+    "url": "https://bringatrailer.com/listing/1991-nissan-300zx-twin-turbo-152/",
+    "notes": "This 1991 Nissan 300ZX Twin Turbo rides on adjustable coilovers as well as 18\" Nismo wheels and is powered by a twin-turbocharged 3.0-liter V6 equipped with an E85 flex-fuel tune,",
+    "seen_at": "2026-09-11T23:51:26Z",
+    "sample": false
+  },
+  {
+    "id": "rad_0555ec547d",
+    "source": "bringatrailer",
+    "title": "Ex–One Lap of America 1978 Datsun 280Z 5-Speed",
+    "category": "Z",
+    "price": "$17,000",
+    "url": "https://bringatrailer.com/listing/1978-datsun-280z-198/",
+    "notes": "This 1978 Datsun 280Z was purchased by an Alabama doctor in 1990 and modified to compete in the 1991 Car and Driver One Lap of America, where it finished third in the modified clas",
+    "seen_at": "2026-09-11T23:51:24Z",
+    "sample": false
+  },
+  {
+    "id": "rad_763f56c47e",
+    "source": "bringatrailer",
+    "title": "1976 Datsun 280Z 5-Speed",
+    "category": "Z",
+    "price": "$280",
+    "url": "https://bringatrailer.com/listing/1976-datsun-280z-114/",
+    "notes": "This 1976 Datsun 280Z is powered by a 2.8-liter inline-six paired with a retrofitted five-speed manual transmission, and it rides on adjustable coilovers as well as 16\" Enkei Compe",
+    "seen_at": "2026-09-11T23:51:24Z",
+    "sample": false
+  },
+  {
+    "id": "rad_8f241bdf7f",
+    "source": "bringatrailer",
+    "title": "1972 Datsun 240Z",
+    "category": "Z",
+    "price": "$25,000",
+    "url": "https://bringatrailer.com/listing/1972-datsun-240z-415/",
+    "notes": "This 1972 Datsun 240Z is finished in orange over black vinyl and is powered by a 2.4-liter inline-six paired with a four-speed manual transmission. The car has been fitted with Kon",
+    "seen_at": "2026-09-11T23:51:18Z",
+    "sample": false
+  },
+  {
+    "id": "rad_0e41533209",
+    "source": "bringatrailer",
+    "title": "Triple Mikuni 44PHH Carburetors and Intake Manifold for Datsun",
+    "category": "For Sale",
+    "price": "$4,000",
+    "url": "https://bringatrailer.com/listing/carburetors-79/",
+    "notes": "This unused induction setup was removed from its factory packaging to be photographed for the sale and is intended for use with Datsun L-series inline-six engines. The set includes",
+    "seen_at": "2026-09-11T23:51:18Z",
+    "sample": false
+  },
+  {
+    "id": "rad_8afb23c23c",
+    "source": "bringatrailer",
+    "title": "35-Years-Owned 1971 Datsun 240Z 5-Speed",
+    "category": "Z",
+    "price": "$5,500",
+    "url": "https://bringatrailer.com/listing/1971-datsun-240z-369/",
+    "notes": "This orange-over-black 1971 Datsun 240Z was registered with two owners in California before it was acquired by the seller in 1991, and it was relocated to Wisconsin seven years lat",
+    "seen_at": "2026-09-11T23:51:18Z",
+    "sample": false
   }
 ]
